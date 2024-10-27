@@ -1,6 +1,6 @@
 # The Professor Chatbot
 
-### Layman to Einstein-level explanation at your fingertips!**
+### Layman to Einstein-level explanation at your fingertips!
 
 Everytime you ask a concept to chatbot, it gonna confuse you with an explanation that's way out of your understanding or too simple to be useless. Turns out that I can solve our universal issue!
 
