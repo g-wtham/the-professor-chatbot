@@ -6,13 +6,13 @@ import os
 load_dotenv()
 genai.configure(api_key=os.environ["GEMINI_API_KEY"])
 
-name = Flask(__name__, template_folder='templates', static_folder='assets')
+app = Flask(__name__, template_folder='templates', static_folder='assets')
 
-@name.route("/")
+@app.route("/")
 def index():
     return render_template("index.html")
 
-@name.route("/submit", methods=['POST'])
+@app.route("/submit", methods=['POST'])
 def submit():
     name = request.form['query']
     model = genai.GenerativeModel("gemini-1.5-flash")
@@ -27,7 +27,7 @@ def submit():
 # print(response.text)
 
 if __name__ == '__main__':
-    name.run(debug=True)
+    app.run()
     
     
     
