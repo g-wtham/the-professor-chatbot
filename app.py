@@ -16,10 +16,12 @@ def index():
 def submit():
     name = request.form['query']
     model = genai.GenerativeModel("gemini-1.5-flash")
-    response = model.generate_content(name)
-    print(f'The query is {name}')
-    return f"Your query has been received: {response.text}"
+    query_response = model.generate_content(name)
+    query_example = f"Based on this explanation: {query_response.text}, provide a relevant example."
+    query_example_response = model.generate_content(query_example)
+    return render_template("index.html", explanation=query_response.text, example=query_example_response.text)
 
+# return f"Your query has been received: {response.text}"
 # model = genai.GenerativeModel("gemini-1.5-flash")
 # response = model.generate_content("Write a story about a magic backpack.")
 # print(response.text)

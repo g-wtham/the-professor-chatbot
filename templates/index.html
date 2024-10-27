@@ -22,7 +22,6 @@
         </nav>
     </header>
     <main>
-        <h2>The Professor</h2>
         <h3>Layman to Einstein-level explanation at fingertips!</h3>
         <div class="container">
             <form action="/submit" method="post">
@@ -42,8 +41,10 @@
                     </div>
                 </div>
                 <div class="content-area">
-                    <textarea>Explanation here</textarea>
-                    <textarea>with EXAMPLE here</textarea>
+                    <p>Explanation here: </p>
+                    <textarea name="explanation" placeholder="Explanation here"> {{explanation}}</textarea>
+                    <p>with an example here: </p>
+                    <textarea name="example" placeholder="with an example here"> {{example}} </textarea>
                 </div>
             </form>
         </div>
