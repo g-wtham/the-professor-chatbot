@@ -10,6 +10,7 @@ Not just **explanations**, pairing it up with **example**, so you can wrap the c
 **LEAVEMEALONE - CHEAT ACTIVATED for CHATGPT**
 
 Enough of marketing, just use it here : https://the-professor-chatbot.onrender.com/
+Alternative link : https://summer-limit-8069.ploomber.app/
 
 ## Features:
 
