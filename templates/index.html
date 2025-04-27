@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chatbot</title>
+    <title>Professor Chatbot</title>
+    <link rel="icon" type="image/x-icon" href="/assets/images/header_logo.png">
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 
@@ -21,10 +22,10 @@
             <form action="/submit" method="post">
                 <textarea placeholder="Ask the professor..." name="query"></textarea>
                 <div class="action-buttons">
-                    <button type="submit">Explain</button>
+                    <button type="submit" class="button-74">Explain</button>
 
                     <div class="slider">
-                        <input type="range" min="1" max="5" value="3" class="slider" id="modeSlider">
+                        <input type="range" min="1" max="5" value="3" slider_value="{{ slider_value | default(3) }}" id="modeSlider" name="slider">
                         <div class="value-range">
                             <span>1</span>
                             <span>2</span>
@@ -35,9 +36,9 @@
                     </div>
                 </div>
                 <div class="content-area">
-                    <p>Explanation here: </p>
+                    <p class="c1">Explanation here: </p>
                     <textarea name="explanation" placeholder="Explanation here"> {{explanation}}</textarea>
-                    <p>with an example here: </p>
+                    <p class="c2">with an example here: </p>
                     <textarea name="example" placeholder="with an example here"> {{example}} </textarea>
                 </div>
             </form>
