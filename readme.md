@@ -9,8 +9,15 @@ Simply, adjust the slider based on your desired level of explanation (1 - Kudos 
 Not just **explanations**, pairing it up with **example**, so you can wrap the concept around your head better this time than smashing the keyboard once again, bombing chatgpt with your vocabulary skills!
 **LEAVEMEALONE - CHEAT ACTIVATED for CHATGPT**
 
-Enough of marketing, just use it here : https://the-professor-chatbot.onrender.com/
-Alternative link : https://summer-limit-8069.ploomber.app/
+Enough of marketing, just use it here : 
+<br>
+https://professor-chatbot.g-wtham.tech/
+
+<br>
+Alternative links : 
+<br>https://summer-limit-8069.ploomber.app/
+
+<br>https://the-professor-chatbot.onrender.com/
 
 ## Features:
 
